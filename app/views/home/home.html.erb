@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EcoApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "my_style", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+
+<!--- HERO -->
+<div class="hero vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <h1 class="display-4"> This is the main Landing Page </h1>
+                <p>This is some text that I will fill in later about the website and 
+                what it does </p>
+
+                <a href="/journey_calculator" class="btn btn-primary">Carbon Calculator</a>
+                <a href="/travel_logs" class="btn btn-outline-light">Travel Logs</a>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <%= yield %>
+
+  </body>
+</html>

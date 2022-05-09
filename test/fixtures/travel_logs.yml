@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trip_name: MyString
+  date: 2022-05-09
+  travel_log: MyString
+
+two:
+  trip_name: MyString
+  date: 2022-05-09
+  travel_log: MyString
