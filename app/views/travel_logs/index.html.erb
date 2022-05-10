@@ -1,14 +1,61 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Travel logs</h1>
-
-<div id="travel_logs">
-  <% @travel_logs.each do |travel_log| %>
-    <%= render travel_log %>
-    <p>
-      <%= link_to "Show this travel log", travel_log %>
-    </p>
-  <% end %>
+<div class="hero hero-blog-background vh-100 d-flex align-items-center">
+    <div class="container">
+       <div class="container">
+<h4 class='d-flex justify-content-between mb-4 mt-5'>
+<p class="blog-title">Travel Logs </p>
+<p><%= link_to "New travel log" , new_travel_log_path, class: 'btn btn-primary mt-4' %></p>
+<h4>
 </div>
 
-<%= link_to "New travel log", new_travel_log_path %>
+<% @travel_logs.each do |travel_log| %>
+  <%= link_to travel_log, class: "text-decoration-none" do %>
+  <div class='container blog-background'>
+    <div class="card mb-5 blog-text">
+      <div class="card-body scroll">
+        <h5 class='card-title text-dark mb-3'><%=travel_log.trip_name%></h5>
+        <h6 class="card-subtitle mb-2 text-muted"><%=travel_log.date%></h6>
+          <p class="text-secondary mb-0"><%= travel_log.travel_log%></p>
+      </div>
+    </div>
+    </div>
+  <%end%>
+<%end%>
+
+
+                
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

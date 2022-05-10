@@ -1,10 +1,25 @@
-<h1>Editing travel log</h1>
 
-<%= render "form", travel_log: @travel_log %>
+<div class="container ">
+ <%= link_to "Back to Travel Logs", travel_logs_path, class: 'btn btn-secondary' %>
+  <div class="row">
+      <div class="col-md-7">
+          <div class="card">
+            <div class="card-body">
 
-<br>
+                <h4 class="card-title">Editing Post</h4>
+                <%= render "form", travel_log: @travel_log%>
 
-<div>
-  <%= link_to "Show this travel log", @travel_log %> |
-  <%= link_to "Back to travel logs", travel_logs_path %>
-</div>
+            </div>
+          </div>
+      </div>
+  </div>
+ </div>
+
+
+
+
+
+
+
+  
+ 

@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+:root {
+  --custom-primary: #4cb269;
+  --custom-secondary: #68c2c2;
+  --custom-light-blue: #68c2c2;
+  --custom-light-gray: #ebeae6;
+  --custom-dark-gray: #333333;
+  --custom-dark-green: #005051;
+
+  --body: black;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
 .link-padding {
   margin-left: 15px;
   margin-right: 15px;
@@ -9,5 +23,72 @@
 }
 
 .sign-up-button {
-  color: whitesmoke;
+  color: purple;
+}
+
+body {
+  font-family: Roboto, "sans-serif";
+  line-height: 1.7;
+  color: var(--body);
+}
+
+h1,
+h2,
+h3,
+h6,
+.display-4 {
+  color: var(--custom-light-gray);
+}
+
+a {
+  color: var(-dark);
+  text-decoration: none;
+}
+
+.hero {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-home-background {
+  background-image: url(landing-page-2.jpeg);
+}
+
+.btn {
+  padding: 5px 10px;
+  border-width: 2px;
+  border-radius: 8px;
+}
+
+.navbar {
+  font-weight: 30px;
+}
+
+.sticky-nav {
+  position: sticky;
+}
+
+.scroll {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.hero-blog-background {
+  background-image: url(blog-background);
+}
+
+.blog-text {
+  opacity: 0.6;
+}
+
+.blog-title {
+  font-size: 50px;
+}
+
+.btn-primary {
+  background-color: #48915d !important;
+  color: whitesmoke !important;
 }
