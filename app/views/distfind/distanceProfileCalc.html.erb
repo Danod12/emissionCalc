@@ -1,12 +1,74 @@
 
 
-  <%= @startLatitudeInt %>
-  <%= @startLongitudeInt %>
- <br>
-   
-   <%= @finishLatitudeInt%>
-   <%= @finishLongitudeInt%>
 
-  <br>
+<div class="hero vh-100 d-flex align-items-center hero-calc-input-background">
+    <div class="container base-container">
 
-  <%= @totalDistance%> km
+        <div class="row">
+                <div class="col-md-12 text-center mt-5">
+                    <h2> Estimate Carbon Emissions <h2>
+                         <p class="calculator-text"> These are the carbon emission for each mode of travel </p>
+                </div>
+       
+        </div>
+
+            <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-3 calculator-input-container">
+                 <h3 class="text-dark" > Distance <h3>
+                     <p class="calculator-output text-dark"> <%= @roundedTotalDistance%> km </p>
+            </div>
+
+
+                <div class="col-md-3 calculator-input-container">
+                 <h3 class="text-dark" > Walking <h3>
+                     <p class="calculator-output text-dark"> 0kg </p>
+                </div>
+
+                 <div class="col-md-3 calculator-input-container">
+                 <h3 class="text-dark" > Cycling <h3>
+                     <p class="calculator-output text-dark"> 0kg </p>
+                </div>
+
+            <div class="col-md-3 calculator-input-container">
+                 <h3 class="text-dark" > Car <h3>
+                     <p class="calculator-output text-dark"> 120kg </p>
+            </div>
+
+             <div class="col-md-3 calculator-input-container">
+                 <h3 class="text-dark" > Plane <h3>
+                     <p class="calculator-output text-dark"> 450kg </p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div> 
+
+
+
+
+
+   </div>
+
+</div>
+
+
+
+
+
+ 
+
+                
+
+
+
+
+

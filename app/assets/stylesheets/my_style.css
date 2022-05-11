@@ -81,7 +81,8 @@ a {
 }
 
 .blog-text {
-  opacity: 0.6;
+  padding: 10px;
+  opacity: 0.7;
 }
 
 .blog-title {
@@ -91,4 +92,124 @@ a {
 .btn-primary {
   background-color: #48915d !important;
   color: whitesmoke !important;
+}
+
+.footer-top {
+  padding: 30px;
+  background-color: #222020;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: whitesmoke;
+  opacity: 0.5;
+}
+
+.footer-title {
+  font-weight: bold;
+}
+
+.footer-top a:hover {
+  color: white;
+  opacity: 1;
+}
+
+.list-margin {
+  margin-top: 15px;
+}
+
+.hero-calc-input-background {
+  background-image: url(sky);
+}
+
+.base-container {
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.calculator-text {
+  font-size: 20px;
+}
+
+.calculator-input-container {
+  background-color: white;
+  border-radius: 6px;
+  padding: 25px;
+  margin: 15px;
+}
+
+.calculator-input {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.find-distance_button {
+  padding: 30px;
+  display: block;
+}
+
+.submit-tag:hover {
+  background-color: #005051;
+  color: whitesmoke;
+}
+
+.calculator-output {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.hero-sign-up-background {
+  background-image: url(landing-page-background);
+}
+
+.base-sign-container {
+  background-color: whitesmoke;
+  opacity: 0.9;
+  border-radius: 8px;
+}
+
+.social-sign {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.line-divide {
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+  width: 95%;
+}
+
+.form-title {
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.submit-sign-button {
+  display: block;
+}
+
+.hero-blog-background-ind {
+  background-image: url(blog-background);
+}
+
+.hero-blog-background {
+  background-image: url(blog-background-3);
+}
+
+.travel-log-navigation {
+  border: 1px solid black;
+  margin-left: 60px;
+  padding: 6px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.travel-log-title {
+  font-weight: bolder;
+  font-size: 40px;
+  color: black;
 }

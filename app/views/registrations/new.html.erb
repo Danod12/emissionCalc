@@ -1,4 +1,4 @@
-<h3> Sign Up <h3>
+
 
 <%= form_with model: @user, local: true, data: {turbo: false}, url: sign_up_path do |form| %>
 
@@ -10,22 +10,91 @@
         </div>
     <% end %>
 
-    <div class="mb-3">
-        <%= form.label :email%>
-        <%= form.text_field :email, class: "form-control", placeholder: "ecotravel@travelcom" %>
-    </div>
-    <div class="mb-3">
-        <%= form.label :password%>
-        <%= form.password_field :password, class: "form-control", placeholder: "password" %>
-    </div>
 
-    <div class="mb-3">
-        <%= form.label :confirm_password %>
-        <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password" %>
-    </div>
+       <div class="hero vh-100 d-flex align-items-center hero-sign-up-background">
+            <div class="container base-sign-container col-6">
+                <div class="row justify-content-center mt-3">
+                    <div class="col-md-3">
+                          <%= image_tag("logo.png", height:120 ) %> 
+                    </div>
+               
 
-     <div class="mb-3">
-    <%= form.submit "Sign-Up", class: "btn btn-primary" %>
-      </div>
+                <div class= "row justify-content-center mt-3">
+                    <div class="col-md-8 text-center">
+                          <p class="social-sign">Sign-up with Google </p> 
+                    </div>
+                </div>
+
+
+                <div class= "row justify-content-center">
+                    <div class="col-md-8 text-center">
+                          <p class="social-sign">Sign-up with Facebook </p> 
+                    </div>
+                </div>
+                    <hr class="line-divide"%>
+
+                <div class="row">
+                    <div class="col-md-12 form-title">
+                          <p>  <%= form.label :email%>
+                         <%= form.text_field :email, class: "form-control", placeholder: "ecotravel@travel.com" %> </p> 
+                    </div>
+            
+                </div>
+                
+
+
+                 <div class="row">
+                    <div class="col-md-12 form-title">
+                          <p> <%= form.label :password %>
+                             <%= form.password_field :password, class: "form-control", placeholder: "password" %> </p> 
+                    </div>
+            
+
+                  <div class="row">
+                    <div class="col-md-12 form-title">
+                          <p>  <%= form.label :confirm_password %>
+                          <%= form.password_field :password_confirmation, class: "form-control", placeholder: "password" %>  </p> 
+                    </div>
+            
+                </div>
+
+                  <div class="row">
+                    <div class="col-md-12 align-items-center form-title">
+                          <p class="submit-sign-button">  <%= form.submit "Sign-Up", class: "form-control submit-tag" %> </p> 
+                    </div>
+            
+                </div>
+
+
+
+
+                
+
+
+
+
+
+                </div>
+            </div>
+
+       </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <%end%>

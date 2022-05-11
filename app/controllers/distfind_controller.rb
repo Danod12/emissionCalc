@@ -22,6 +22,8 @@ class DistfindController < ApplicationController
 
     @totalDistance = DistanceFinder.distanceCalculation(@startLatitudeInt,@finishLatitudeInt, @startLongitudeInt,@finishLongitudeInt)
 
+    @roundedTotalDistance = @totalDistance.round(2)
+
 
 
    

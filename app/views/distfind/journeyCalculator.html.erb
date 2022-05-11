@@ -1,15 +1,56 @@
-<h1>Distance Calculator</h1>
+
 
 <%= form_with url: "/distance_profile", local: true, data: { turbo: false } do |f| %>
 
-<h3> Starting Position <h3>
-<%= text_field_tag :startingLocation %> 
-<h3> Finish Position <h3>
-<%= text_field_tag :finishLocation %>
-<%= submit_tag "Find Coordinates" %>
+
+<div class="hero vh-100 d-flex align-items-center hero-calc-input-background">
+    <div class="container base-container">
+
+        <div class="row">
+                <div class="col-md-12 text-center mt-5">
+                    <h2> Carbon Travel Calculator <h2>
+                         <p class="calculator-text"> Estimate the carbon emissions for your journey </p>
+                </div>
+        </div>
+
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-5 calculator-input-container">
+                 <h3 class="text-dark" > Starting City <h3>
+                     <p class="calculator-input"><%= text_field_tag :startingLocation %> </p>
+            </div>
+
+            <div class="col-md-5 calculator-input-container">
+               <h3 class="text-dark" > Destination City <h3>
+                <p class="calculator-input"><%= text_field_tag :finishLocation %> </p>
+             </div>
+
+             <div class="row">
+                <div class="col-md-12">
+                <p class="find-distance_button"> <%= submit_tag "Find Coordinates",  class: "form-control submit-tag" %></p>
+                </div>
+             </div>
+
+
+
+
+
+             
+           
+        </div>
+              
+        </div>
+
+    </div>
+
+</div>
 
 
 
 
 <% end %>
  
+
+                
+
+
+
