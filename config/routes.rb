@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     get '/journey_calculator' => 'distfind#journeyCalculator'
   
     post '/distance_profile' => 'distfind#distanceProfileCalc'
+
+    post '/distance_profile' => 'distfind#totalCo2Emission'
   
   
 end

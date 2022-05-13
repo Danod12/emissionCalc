@@ -1,4 +1,4 @@
-<p style="color: green"><%= notice %></p>
+
 
 
 <div class="hero hero-blog-background-ind vh-100 d-flex align-items-center">
@@ -9,18 +9,18 @@
           </div>
       </div>
 
-      <div class="row text-center mt-4">
+      <div class="row text-center mt-5 justify-content-center highlight">
 
-        <div class="col-md-3 travel-log-navigation">
-           <%= link_to "Edit Travel Log", edit_travel_log_path(@travel_log) %>
+        <div class="col-md-3 navigation-blog-button">
+           <%= link_to "Edit Travel Log", edit_travel_log_path(@travel_log), class: "text-black" %>
         </div>
 
-         <div class="col-md-3 travel-log-navigation">
-           <%= link_to "Back to Travel Log", travel_logs_path %>
+         <div class="col-md-3 navigation-blog-button">
+           <%= link_to "Back to Travel Log", travel_logs_path, class: "text-black" %>
         </div>
         
-         <div class="col-md-3 travel-log-navigation">
-            <%= button_to "Delete", @travel_log, method: :delete %>
+         <div class="col-md-3 navigation-blog-button">
+            <%= button_to "Delete", @travel_log, method: :delete, class: "text-black delete-button" %>
         </div>
 
 
@@ -36,11 +36,6 @@
    </div>
 
 </div>
-
-
-
-
-
 
 
 
@@ -69,7 +64,7 @@
 
 
 
-  |
+  
  
      
 

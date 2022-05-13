@@ -1,4 +1,6 @@
 require 'distance_finder'
+require 'co2_travel_calc'
+
 
 class DistfindController < ApplicationController
 #adding a commit comment
@@ -24,14 +26,13 @@ class DistfindController < ApplicationController
 
     @roundedTotalDistance = @totalDistance.round(2)
 
-
-
-   
-
-    
+    @totalEmissionsCar = (CarbonCalcCar.checkCar(@roundedTotalDistance)).round(2);
+    @totalEmissionsPlane = (CarbonCalcCar.checkPlane(@roundedTotalDistance)).round(2);
 
     
+
 
     end
+
 
 end

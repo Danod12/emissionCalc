@@ -1,23 +1,32 @@
 
 <div class="hero hero-blog-background vh-100 d-flex align-items-center">
+
     <div class="container">
        <div class="container">
-          <div class='d-flex justify-content-between mb-4 mt-5'>
-              <p class="travel-log-title">Travel Logs </p>
-              <%= link_to "New travel log" , new_travel_log_path, class: 'btn btn-primary' %>
-          </div>
+              <div class="row col-12">
+                <div class="col-md-12 text-center">
+                <h2 class="travel-log-title">Travel Logs </h2> 
+                <p class="travel-log-text">Tell Your Story |
+                 <%= link_to "Create New" , new_travel_log_path, class: "text-white new-button" %></p>
+                </div>
+              </div>
+
+         
         </div>
 
       <% @travel_logs.each do |travel_log| %>
         <%= link_to travel_log, class: "text-decoration-none" do %>
-        <div class='container blog-background'>
-          <div class="card col-6 mb-5 blog-text d-flex justify-content-center">
+        <div class='container'>
+        
+          <div class="card col-6 mb-5 blog-text justify-content-between ">
+            
             <div class="card-body">
               <h3 class='card-title text-dark text-center'><%=travel_log.trip_name%></h3>
-              
             </div>
+              
           </div>
           </div>
+          
         <%end%>
       <%end%>
 
@@ -30,6 +39,29 @@
     </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

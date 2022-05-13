@@ -63,6 +63,16 @@ a {
   border-radius: 8px;
 }
 
+.sign-up-button-home {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 100px;
+  background-color: hsl(181, 93%, 24%);
+  border: 1.5px solid rgb(186, 185, 185);
+  color: whitesmoke;
+  border-radius: 6px;
+}
+
 .navbar {
   font-weight: 30px;
 }
@@ -129,6 +139,14 @@ a {
   z-index: 1;
 }
 
+.base-container-results {
+  background-color: #222020;
+  opacity: 0.95;
+
+  border-radius: 8px;
+  z-index: 1;
+}
+
 .calculator-text {
   font-size: 20px;
 }
@@ -147,7 +165,6 @@ a {
 
 .find-distance_button {
   padding: 30px;
-  display: block;
 }
 
 .submit-tag:hover {
@@ -158,6 +175,22 @@ a {
 .calculator-output {
   padding: 15px;
   border-radius: 5px;
+}
+
+.calculator-output-plane {
+  background-color: rgba(209, 45, 45);
+}
+
+.calculator-output-car {
+  background-color: orange;
+}
+
+.calculator-output-cycling {
+  background-color: #0d8789;
+}
+
+.calculator-output-walking {
+  background-color: #0d8789;
 }
 
 .hero-sign-up-background {
@@ -192,12 +225,18 @@ a {
   display: block;
 }
 
+.form-control-1 {
+  padding-left: 175px;
+  padding-right: 175px;
+  border-radius: 6px;
+}
+
 .hero-blog-background-ind {
   background-image: url(blog-background);
 }
 
 .hero-blog-background {
-  background-image: url(blog-background-3);
+  background-image: url(blog-background-4);
 }
 
 .travel-log-navigation {
@@ -209,7 +248,84 @@ a {
 }
 
 .travel-log-title {
-  font-weight: bolder;
+  font-size: 80px;
+  color: #222020;
+}
+
+.travel-log-text {
   font-size: 40px;
-  color: black;
+  margin-bottom: 50px;
+  color: #222020;
+}
+
+.new-blog-button {
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: rgb(9, 122, 41);
+  opacity: 0.6;
+  padding: 15px;
+  margin-bottom: 80px;
+}
+
+.navigation-blog-button {
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: rgb(231, 231, 231);
+  opacity: 0.6;
+  padding: 15px;
+  margin: 0 50px;
+  padding: 6px;
+}
+
+.delete-button {
+  border: none;
+  background-color: transparent;
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.card {
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
+.success-sign-up {
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: hsl(181, 96%, 19%);
+  color: whitesmoke;
+  padding: 15px;
+  margin-bottom: 80px;
+}
+
+.new-button {
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  font-size: 40px;
+}
+
+.home-button-links {
+  border: 1.5px solid rgb(186, 185, 185);
+  border-radius: 6px;
+  color: whitesmoke;
+  font-size: 20px;
+  background-color: rgb(86, 157, 181);
+  margin: 10px;
+}
+
+.home-button-carbon {
+  border: 1.5px solid rgb(186, 185, 185);
+  border-radius: 6px;
+  color: whitesmoke;
+  font-size: 20px;
+  background-color: hsl(181, 93%, 24%);
+  margin: 10px;
 }

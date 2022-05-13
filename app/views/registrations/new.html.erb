@@ -65,7 +65,15 @@
             
                 </div>
 
+                <div class="row justify-content-center" >
 
+                    <div class="col-md-12">
+                         <% flash.each do |name, msg| %>
+                     <%= content_tag :div, msg, class: ["name", "text-center", "success-sign-up"] %>
+                      <% end -%>
+                    </div>
+                    </div>
+                    
 
 
                 
