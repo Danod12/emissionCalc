@@ -1,5 +1,5 @@
 require 'distance_finder'
-
+require 'co2_travel_calc'
 
 
 class DistfindController < ApplicationController
