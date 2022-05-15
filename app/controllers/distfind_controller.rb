@@ -14,6 +14,8 @@ class DistfindController < ApplicationController
         @srtPos = params[:startingLocation] 
         @fnsPos = params[:finishLocation]
 
+    if @srtPos !=nil && @fnsPos !=nil
+
    
     @startLatitudeInt = DistanceFinder.findLatStartPosition(@srtPos)
     @startLongitudeInt = DistanceFinder.findLonStartPosition(@srtPos)
@@ -28,10 +30,13 @@ class DistfindController < ApplicationController
 
     @totalEmissionsCar = (CarbonCalcCar.checkCar(@roundedTotalDistance)).round(2);
     @totalEmissionsPlane = (CarbonCalcCar.checkPlane(@roundedTotalDistance)).round(2);
-
     
+   else
 
-
+   flash.now[:alert] = 'Error while sending message!'
+   
+    end
+    
     end
 
 

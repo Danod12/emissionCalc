@@ -1,9 +1,41 @@
-<h1>New travel log</h1>
 
-<%= render "form", travel_log: @travel_log %>
 
-<br>
+<div class="container edit-container ">
+ 
+  <div class="row col-12 d-flex justify-content-center">
+      <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+             
+                <h4 class="card-title">New Travel Log| <%= link_to "Back to Travel Logs", travel_logs_path, class: 'back-to-logs text-center align-items-center col-12' %></h4>
+                <%= render "form", travel_log: @travel_log%>
+            
+              <span>    </span>
+            </div>
+           
+          </div>
+          
+      </div>
+  </div>
+ </div>
 
-<div>
-  <%= link_to "Back to travel logs", travel_logs_path %>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

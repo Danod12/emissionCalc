@@ -206,6 +206,8 @@ a {
 .social-sign {
   border: 1px solid black;
   border-radius: 8px;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .line-divide {
@@ -322,10 +324,49 @@ a {
 }
 
 .home-button-carbon {
-  border: 1.5px solid rgb(186, 185, 185);
   border-radius: 6px;
   color: whitesmoke;
   font-size: 20px;
   background-color: hsl(181, 93%, 24%);
   margin: 10px;
+}
+
+.travel-log-text {
+  font-size: 40px;
+}
+
+.travel-log-text-show {
+  font-size: 20px;
+}
+
+.update-button {
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: hsl(181, 96%, 19%);
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.back-to-logs {
+  border: 1px solid rgb(186, 185, 185);
+  border-radius: 8px;
+  font-size: 15px;
+
+  color: black;
+  padding: 5px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.edit-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.icon-size {
+  font-size: 25px;
+  margin-top: 10px;
+  padding: 6px;
 }

@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   
     post '/distance_profile' => 'distfind#distanceProfileCalc'
 
-    post '/distance_profile' => 'distfind#totalCo2Emission'
-  
+    get '*path' => redirect("/journey_calculator")
   
 end
