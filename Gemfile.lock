@@ -219,7 +219,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap
   capybara
-  co2_travel_calc
+  co2_travel_calc (~> 0.0.0)
   cssbundling-rails
   debug
   jbuilder
