@@ -40,7 +40,7 @@ gem "jbuilder"
  gem "bcrypt", "~> 3.1.7"
 
  #co2 Carbon Emission Calculator
- gem "co2_travel_calc"
+gem 'co2_travel_calc', '~> 0.0.0'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
